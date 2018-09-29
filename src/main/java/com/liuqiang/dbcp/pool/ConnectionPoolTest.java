@@ -15,6 +15,7 @@ public class ConnectionPoolTest {
         dataSource.setUser("root");
         dataSource.setPassword("");
 
+
         System.out.println("创建数据库连接池");
         ConnectionPoolFactory factory = new ConnectionPoolFactory(dataSource);
         GenericObjectPool pool = new GenericObjectPool(factory);
